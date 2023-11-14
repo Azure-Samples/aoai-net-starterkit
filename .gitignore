@@ -396,3 +396,17 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# application configuration files
+*.env
+**/.DS_Store
+assets/docs/05_output_embedding/*
+
+docs/05_Embeddings/src/Notebook/Vectors.png
+docs/05_Embeddings/src/Notebook/kmeans.model
+docs/05_Embeddings/src/Notebook/pca.model
+docs/05_Embeddings/src/Notebook/full.json
+docs/05_Embeddings/src/Notebook/xy.json
+docs/05_Embeddings/src/Notebook/showdata.pbix
+docs/05_Embeddings/src/Notebook/full-umap.json
+docs/05_Embeddings/src/Notebook/test.ipynb

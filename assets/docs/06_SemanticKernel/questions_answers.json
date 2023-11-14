@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "category": "data",
+    "question": "Why is my mobile data not working?",
+    "answer": "Please check if you've reached your data limit or if mobile data is turned off in your settings. If not, try restarting your phone."
+  },
+  {
+    "id": "2",
+    "category": "sim",
+    "question": "How do I activate my new SIM card?",
+    "answer": "You can activate your new SIM card by calling our automated line or logging into your account online and selecting 'Activate SIM'."
+  },
+  {
+    "id": "3",
+    "category": "messages",
+    "question": "Why can't I send or receive text messages?",
+    "answer": "Ensure that your message center number is correctly set in your phone's messaging settings. If the issue persists, restart your phone."
+  },
+  {
+    "id": "4",
+    "category": "authentication",
+    "question": "My phone doesn't recognize my fingerprint. What should I do?",
+    "answer": "Ensure your fingers are clean and dry. If the problem persists, re-register your fingerprint in your phone's settings."
+  },
+  {
+    "id": "5",
+    "category": "data",
+    "question": "How can I check my current data usage?",
+    "answer": "You can check your data usage in the 'Usage' section of your account online or by dialing our specific USSD code."
+  },
+  {
+    "id": "6",
+    "category": "balance",
+    "question": "Why am I being charged extra this month?",
+    "answer": "Extra charges could be due to out-of-plan activities like international calls or data overages. Please check your detailed bill for specifics."
+  },
+  {
+    "id": "7",
+    "category": "battery",
+    "question": "My phone's battery drains too quickly. What can I do?",
+    "answer": "Make sure apps are not running in the background. Reduce screen brightness and turn off features like Bluetooth when not in use."
+  },
+  {
+    "id": "8",
+    "category": "voicemail",
+    "question": "I can't access my voicemail. Can you help?",
+    "answer": "First, ensure you've set up your voicemail. If it's set up but not working, call our support line for assistance."
+  },
+  {
+    "id": "9",
+    "category": "calls",
+    "question": "How do I set up call forwarding?",
+    "answer": "Go to 'Settings', then 'Call Settings', and select 'Call Forwarding'. Enter the number you want to forward calls to."
+  },
+  {
+    "id": "10",
+    "category": "sim",
+    "question": "I lost my phone. How do I block my SIM?",
+    "answer": "Call our helpline immediately or log into your online account to report and block your SIM to prevent unauthorized use."
+  },
+  {
+    "id": "11",
+    "category": "balance",
+    "question": "How do I top up my prepaid balance?",
+    "answer": "You can top up online, through our app, at our stores, or by purchasing a top-up card from retailers."
+  },
+  {
+    "id": "12",
+    "category": "wifi",
+    "question": "Why can't I connect to Wi-Fi?",
+    "answer": "Ensure the Wi-Fi feature is turned on, and you're entering the correct password for the network. Restart your phone if necessary."
+  },
+  {
+    "id": "13",
+    "category": "plan",
+    "question": "I want to change my plan. How can I do that?",
+    "answer": "Log into your online account and go to 'Change Plan'. Alternatively, visit our store or call our helpline for assistance."
+  },
+  {
+    "id": "14",
+    "category": "configuration",
+    "question": "How do I reset my phone to factory settings?",
+    "answer": "Go to 'Settings', then 'System', and select 'Reset'. Make sure to back up your data first!"
+  },
+  {
+    "id": "15",
+    "category": "performance",
+    "question": "My phone is running slow. Any tips?",
+    "answer": "Clear cache, uninstall unnecessary apps, and make sure your phone's software is updated. If it persists, consider a factory reset."
+  },
+  {
+    "id": "16",
+    "category": "contacts",
+    "question": "Can I transfer my contacts to my new phone?",
+    "answer": "Yes, you can sync your contacts to a cloud account or use Bluetooth to transfer them between devices."
+  },
+  {
+    "id": "17",
+    "category": "data",
+    "question": "How can I set a data limit on my phone?",
+    "answer": "Go to 'Settings', then 'Data Usage', and set a warning and a limit for your data usage."
+  },
+  {
+    "id": "18",
+    "category": "data",
+    "question": "Why am I not getting 4G speed?",
+    "answer": "Ensure 4G is enabled in your settings and that you're in a 4G coverage area. If you're on an older plan, you might need to upgrade."
+  },
+  {
+    "id": "19",
+    "category": "calls",
+    "question": "How can I block a specific number from calling me?",
+    "answer": "Go to 'Call Settings' in your phone, and you should find an option to block specific numbers or see recent calls and select block."
+  },
+  {
+    "id": "20",
+    "category": "configuration",
+    "question": "I can't install new apps. What's the issue?",
+    "answer": "Ensure you have sufficient storage space on your phone. If space isn't the issue, check for any app restrictions or updates needed."
+  }
+]
