@@ -44,6 +44,7 @@ Explore the following notebooks in this repository to learn how to create chat a
 | ------ | ------- | ------- |
 | / | [01-ChatCompletion](./01_ChatCompletion.ipynb) | Demonstrates creating a chat application using the SDK. Comparable to the REST API's BasicChat example. |
 | / | [02-ChatCompletionStreaming](./02_ChatCompletionStreaming.ipynb) | Shows how to implement chat functionality with streaming capabilities using the SDK. |
+| / | [03-JSONMode](03_JSONMode.ipynb) | Shows how to implement functionality to instruct the LLM to return responses in JSON format |
 
 These notebooks are replete with detailed explanations at each step, making them a comprehensive guide for developers at all levels.
 
