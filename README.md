@@ -27,6 +27,7 @@ Below is a detailed breakdown of each folder in this repository. Each section co
 | [03](./docs/03_SDK/)  | [Chat Completion](./docs/03_SDK/01_-_ChatCompletion.ipynb)  | C# sample code to interact with the ChatCompletion LLM using the `Azure.AI.OpenAI` NuGet package |
 | [03](./docs/03_SDK/)  | [Chat Completion Streaming](./docs/03_SDK/02_ChatCompletionStreaming.ipynb)  | Advanced C# sample code for streaming interactions with the ChatCompletion LLM |
 | [03](./docs/03_SDK/)  | [JSON Mode](./docs/03_SDK/03_JSONMode.ipynb)  | C# sample instructing the model to respond with valid JSON |
+| [03](./docs/03_SDK/)  | [GPT-4 Vision](./docs/03_SDK/04_MultiModalVision.ipynb)  | C# sample using text and image data | gpt-4 vision is one of the first multi-modal models being able to process text and image data as input
 | [04](./docs/04_Embeddings/)  | [Basic Embeddings](./docs/04_Embeddings/01_BasicEmbeddings.ipynb)  | C# code to create embeddings with the `Azure.AI.OpenAI` NuGet package | Embeddings are numerical text representations in a 1536-dimension vector |
 | [04](./docs/04_Embeddings/)  | [Cosine Similarity](./docs/04_Embeddings/02_CosineSimilarity.ipynb)  | C# examples using `MathNet.Numerics` to calculate the cosine distance between vectors | The closer the distance, the more similar the semantic meanings |
 | [05](./docs/05_VectorDB/)  | [Vector Database](./docs/05_VectorDB/01_CognitiveSearch.ipynb)  | C# code for using Azure Cognitive Search as a vector database | Involves storing and querying embeddings with a created Search Index |
