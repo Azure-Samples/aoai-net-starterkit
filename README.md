@@ -1,3 +1,16 @@
+---
+page_type: sample
+languages:
+- csharp
+- azurecli
+products:
+- azure
+- azure-openai
+- semantic-kernel
+name: Azure OpenAI | Call Center Starter Kit
+description: Azure OpenAI Starter Kit for .NET Developers
+---
+
 # Azure OpenAI | Call Center Starter Kit
 
 ## Overview
