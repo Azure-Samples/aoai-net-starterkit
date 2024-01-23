@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Scenario.01_PolicyCheckEngine",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build.Scenario.01",
+            "program": "${workspaceFolder}/scenarios/01_PolicyCheckEngine/src/PolicyServer/bin/Debug/net7.0/PolicyServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/scenarios/01_PolicyCheckEngine/src/PolicyServer",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger/index.html"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        }
+    ]
+}
