@@ -1,0 +1,55 @@
+{
+  "Request": [
+    { 
+      "PolicyId": "Auth-KnowHow-01",
+      "ContentToLookFor": "What's your PIN?",
+      "PotentialPhrases": [
+        "Can you tell me your PIN?",
+        "What's your Personal Identification Number?",
+        "What's your PIN number?"
+      ], 
+      "OffTopicPhrases": [
+        "What's your bank account number?",
+        "What business are you doing?"
+      ]
+    },
+    {
+      "PolicyId": "Auth-KnowHow-02",
+      "ContentToLookFor": "What's your account number?", 
+      "PotentialPhrases": [
+        "Can you tell me your account number?",
+        "What is your account number?",
+        "Have I already asked for your account number?"
+      ], 
+      "OffTopicPhrases": [
+        "What's your bank account number?",
+        "What business are you doing?"
+      ]
+    }, 
+    {
+      "PolicyId": "Auth-Ownership-01",
+      "ContentToLookFor": "Which subsidiary is maintaining your account?", 
+      "PotentialPhrases": [
+        "Which subsidiary are you going to?",
+        "Where is your account maintained?",
+        "Which subsidiary is your account maintained in?"
+      ], 
+      "OffTopicPhrases": [
+        "What's your bank account number?",
+        "What business are you doing?"
+    ]
+    },
+    {
+      "PolicyId": "Auth-Ownership-02",
+      "ContentToLookFor": "How often do you get a balance sheet?", 
+      "PotentialPhrases": [
+        "What's the frequency of your balance sheet?",
+        "Balance sheet frequency?"
+      ],
+      "OffTopicPhrases": [
+        "What's your bank account number?",
+        "What business are you doing?"
+      ]
+    }
+  ]
+}
