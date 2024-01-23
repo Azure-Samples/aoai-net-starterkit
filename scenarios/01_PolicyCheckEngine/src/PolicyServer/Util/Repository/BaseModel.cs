@@ -1,6 +1,6 @@
-using PCheck.Models;
+using SKit.Scenario.PolicyCheck.Models;
 
-namespace PCheck.Util.Repository;
+namespace SKit.Scenario.PolicyCheck.Util.Repository;
 
 public class Policy : EntityBase
 {

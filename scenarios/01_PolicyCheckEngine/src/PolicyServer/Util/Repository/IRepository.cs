@@ -1,6 +1,6 @@
-using static PCheck.Util.PolicyRepository;
+using static SKit.Scenario.PolicyCheck.Util.PolicyRepository;
 
-namespace PCheck.Util;
+namespace SKit.Scenario.PolicyCheck.Util;
 
 public interface IRepository<T> where T : EntityBase
 {

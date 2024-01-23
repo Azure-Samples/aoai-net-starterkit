@@ -1,11 +1,11 @@
-namespace PCheck.Util;
+namespace SKit.Scenario.PolicyCheck.Util;
 
 using System.Text.Json;
-using PCheck.Models;
+using SKit.Scenario.PolicyCheck.Models;
 
-public class PolicyRepository : IRepository<Policy>
+public class PolicyRepository : IRepository<PolicyRule>
 {
-    Dictionary<string, Policy> _policyRepository = new Dictionary<string, Policy>();
+    Dictionary<string, PolicyRule> _policyRepository = new Dictionary<string, PolicyRule>();
 
     public PolicyRepository(string dataFolder)
     {
@@ -14,12 +14,12 @@ public class PolicyRepository : IRepository<Policy>
             AddPolicyFromFile(fileName, Path.GetFileNameWithoutExtension(fileName));
     }
 
-    public async Task<Policy> GetById(string id)
+    public async Task<PolicyRule> GetById(string id)
     {
         return await Task.Run( () => _policyRepository.Where(item => item.Key == id).FirstOrDefault().Value);
     }
 
-    public async Task<Policy> Create(Policy item)
+    public async Task<PolicyRule> Create(PolicyRule item)
     {
         // delete if exists
         if (_policyRepository.ContainsKey(item.PolicyId))
@@ -41,7 +41,7 @@ public class PolicyRepository : IRepository<Policy>
             File.ReadAllText(fileName));
 
         _policyRepository.Add(policy.ToString(),
-            new Policy()
+            new PolicyRule()
             {
                 PolicyId = policy,
                 ContentToLookFor = jsonDocument

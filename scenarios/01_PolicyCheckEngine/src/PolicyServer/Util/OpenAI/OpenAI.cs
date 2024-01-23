@@ -1,7 +1,7 @@
 using Azure;
 using Azure.AI.OpenAI;
 
-namespace PCheck.Util;
+namespace SKit.Scenario.PolicyCheck.Util;
 
 public class OpenAI : IOpenAI {
 

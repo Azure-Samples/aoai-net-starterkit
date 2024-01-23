@@ -1,10 +1,10 @@
-namespace PCheck.Models;
+namespace SKit.Scenario.PolicyCheck.Models;
 
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 //Response Models
-public class PolicyCheckResult 
+public class PolicyRuleCheckResult 
 {
     
     [JsonPropertyName("CalculatedDistance")]
@@ -24,13 +24,13 @@ public class PolicyCheckResult
 }
 
 
-public class PolicyRegisterResult{
+public class PolicyRuleRegisterResult{
     [JsonPropertyName("PolicyUri")]
     public string[] PolicyUris {get; set;} = new string[0];
 }
 
 //Request Models
-public class PolicyRegisterRequest
+public class PolicyRuleRegisterRequest
 {
     [JsonPropertyName("PolicyId")]
     public string PolicyId {get; set;} = string.Empty;
