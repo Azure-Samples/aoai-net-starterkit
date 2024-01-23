@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using MathNet.Numerics;
-using PCheck.Models;
-using PCheck.Util;
+using SKit.Scenario;
+using SKit.Scenario.PolicyCheck.Models;
+using SKit.Scenario.PolicyCheck.Util;
 
-namespace PC.Controllers;
+namespace SKit.Scenario.PolicyCheck.Controllers;
 
 [ApiController]
 public class PolicyController : ControllerBase
@@ -16,17 +17,17 @@ public class PolicyController : ControllerBase
     }
 
     [HttpGet]
-    [Route("/policycheck/{policyId}/{content}")]
-    public async Task<ActionResult<PCheckResponse<PolicyCheckResult>>> CheckPolicy(
+    [Route("/policyrulecheck/{policyId}/{content}")]
+    public async Task<ActionResult<PolicyRuleCheckResponse<PolicyRuleCheckResult>>> CheckPolicyRule(
         IOpenAI openAI,
-        IRepository<Policy> policyRepository,
+        IRepository<PolicyRule> policyRepository,
         string policyId, 
         string content) {
         //content = transcript with questions raised during a conversation
 
-        PCheckResponse<PolicyCheckResult> response = new PCheckResponse<PolicyCheckResult>();
+        PolicyRuleCheckResponse<PolicyRuleCheckResult> response = new PolicyRuleCheckResponse<PolicyRuleCheckResult>();
 
-        PCheckRequest<CheckRequest> request = new PCheck.Models.PCheckRequest<CheckRequest>() {
+        PolicyRuleCheckRequest<CheckRequest> request = new PolicyCheck.Models.PolicyRuleCheckRequest<CheckRequest>() {
             RequestData = new CheckRequest() {
                 PolicyId = policyId,
                 Content = content
@@ -34,9 +35,9 @@ public class PolicyController : ControllerBase
         };
 
         // retrieve pre-calculated policy data from repository
-        Policy policy = await policyRepository.GetById(request.RequestData.PolicyId);
+        PolicyRule policy = await policyRepository.GetById(request.RequestData.PolicyId);
         if (policy == null) {
-            response.Status = PCheckResponseStatus.Failure;
+            response.Status = PolicyRuleCheckResponseStatus.Failure;
             response.Error.Add($"policy not found: {request.RequestData.PolicyId}");
             return StatusCode(StatusCodes.Status404NotFound, response);  
         }
@@ -44,7 +45,7 @@ public class PolicyController : ControllerBase
         //create embedding for content (data which should be checked against policy)
         (bool success, float[] contentVector) = await openAI.CreateEmbedding(request.RequestData.Content);
         if (!success) {
-            response.Status = PCheckResponseStatus.Failure;
+            response.Status = PolicyRuleCheckResponseStatus.Failure;
             response.Error.Add($"failed to create embedding for content: {request.RequestData.Content.Substring(10)}...");
             return StatusCode(StatusCodes.Status500InternalServerError, response);  
         }
@@ -73,15 +74,15 @@ public class PolicyController : ControllerBase
     }
 
     [HttpPut]
-    [Route("/policycheck")]
-    public async Task<ActionResult<PCheckResponse<PolicyCheckResult>>> RegisterPolicy(
+    [Route("/policyrulecheck")]
+    public async Task<ActionResult<PolicyRuleCheckResponse<PolicyRuleCheckResult>>> RegisterPolicyRule(
         IOpenAI openAI,
-        IRepository<Policy> policyRepository,
-        [FromBody]PCheckRequest<List<PolicyRegisterRequest>> request) {
+        IRepository<PolicyRule> policyRepository,
+        [FromBody]PolicyRuleCheckRequest<List<PolicyRuleRegisterRequest>> request) {
 
-        PCheckResponse<PolicyRegisterResult> response = new PCheckResponse<PolicyRegisterResult>();
+        PolicyRuleCheckResponse<PolicyRuleRegisterResult> response = new PolicyRuleCheckResponse<PolicyRuleRegisterResult>();
 
-        foreach(PolicyRegisterRequest policyRegisterRequest in request.RequestData) {
+        foreach(PolicyRuleRegisterRequest policyRegisterRequest in request.RequestData) {
 
             //create embedding for "Content to look for" & calcualte "Potential Phrases" distance
             (bool success, float[] vectorContentToLookFor) = await openAI.CreateEmbedding(policyRegisterRequest.ContentToLookFor);
@@ -99,7 +100,7 @@ public class PolicyController : ControllerBase
             }
             
             //store policy (including avg. distance for PotentialPhrases and OffTopicPhrases)
-            await policyRepository.Create(new Policy() {
+            await policyRepository.Create(new PolicyRule() {
                 PolicyId = policyRegisterRequest.PolicyId,
                 ContentToLookFor = vectorContentToLookFor,
                 AvgOptimalDistance = potPhrasesDistances / policyRegisterRequest.PotentialPhrases.Length,
@@ -107,7 +108,7 @@ public class PolicyController : ControllerBase
             });
 
         }
-        response.Result.PolicyUris = request.RequestData.Select(item => $"/policycheck/{item.PolicyId}/").ToArray();
+        response.Result.PolicyUris = request.RequestData.Select(item => $"/policyrulecheck/{item.PolicyId}/").ToArray();
 
         return Ok(response);
     }

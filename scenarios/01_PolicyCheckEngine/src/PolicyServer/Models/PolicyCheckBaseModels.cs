@@ -1,10 +1,9 @@
-namespace PCheck.Models;
+namespace SKit.Scenario.PolicyCheck.Models;
 
-using System.Text.Json;
 using System.Text.Json.Serialization;
-using static PCheck.Util.PolicyRepository;
+using static SKit.Scenario.PolicyCheck.Util.PolicyRepository;
 
-public class Policy : EntityBase
+public class PolicyRule : EntityBase
 {
     public string PolicyId { get; set; } = string.Empty;
     public float[] ContentToLookFor {get; set;} = new float[1536];
@@ -15,20 +14,20 @@ public class Policy : EntityBase
 
 
 //Response Models
-public class PCheckResponse<T> : PCheckResponseBase where T : new()
+public class PolicyRuleCheckResponse<T> : PolicyRuleCheckResponseBase where T : new()
 {
     [JsonPropertyName("Result")]
     public T Result { get; set; } = new T(); 
 }
 
-public class PCheckResponseBase {
+public class PolicyRuleCheckResponseBase {
     [JsonPropertyName("Status")]
-    public PCheckResponseStatus Status { get; set; } = PCheckResponseStatus.Success;
+    public PolicyRuleCheckResponseStatus Status { get; set; } = PolicyRuleCheckResponseStatus.Success;
     [JsonPropertyName("Error")]
     public IList<string> Error { get; set; } = new List<string>();
 }
 
-public enum PCheckResponseStatus {
+public enum PolicyRuleCheckResponseStatus {
     [JsonPropertyName("Success")]
     Success = 0,
     [JsonPropertyName("Failure")]
@@ -36,7 +35,7 @@ public enum PCheckResponseStatus {
 }
 
 //Request Models
-public class PCheckRequest<T> where T : new()
+public class PolicyRuleCheckRequest<T> where T : new()
 {
     [JsonPropertyName("Request")]
     public T RequestData { get; set; } = new T();

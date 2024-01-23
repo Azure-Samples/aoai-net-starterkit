@@ -55,11 +55,43 @@ A policy rule can be defined by providing the following information:
 
 ### Policy rule registration
 
-Policy rules can be registered with the system by performing a **HTTP PUT** against the [*/policycheck* endpoint]().
+Policy rules can be registered with the system by performing a **HTTP PUT** against the [*/policyrulecheck*](./src/PolicyServer/Controllers/PolicyController.cs) endpoint:
 
-As payload an [object of type]() `PCheckRequest<List<PolicyRuleRegisterRequest>>` is expected.
+```csharp
+[HttpPut]
+[Route("/policyrulecheck")]
+public async Task<ActionResult<PolicyRuleCheckResponse<PolicyRuleCheckResult>>>         RegisterPolicyRule(
+    IOpenAI openAI,
+    IRepository<PolicyRule> policyRepository,
+    [FromBody]PolicyRuleCheckRequest<List<PolicyRuleRegisterRequest>> request) { ... }
+```
 
-The following steps are executed during policy registration and policy storage in a [repository]():
+As payload a [list of PolicyRuleRegisterRequest](./src/PolicyServer/Models/PolicyCheckModels.cs) `PolicyRuleCheckRequest<List<PolicyRuleRegisterRequest>>` is expected:
+
+```csharp
+public class PolicyRuleCheckRequest<T> where T : new()
+{
+    [JsonPropertyName("Request")]
+    public T RequestData { get; set; } = new T();
+}
+
+public class PolicyRuleRegisterRequest
+{
+    [JsonPropertyName("PolicyId")]
+    public string PolicyId {get; set;} = string.Empty;
+    
+    [JsonPropertyName("ContentToLookFor")]
+    public string ContentToLookFor {get; set;} = string.Empty;
+    
+    [JsonPropertyName("PotentialPhrases")] 
+    public string[] PotentialPhrases {get; set;} = new string[0]; 
+    
+    [JsonPropertyName("OffTopicPhrases")]
+    public string[] OffTopicPhrases {get; set;} = new string[0];    
+}
+```
+
+The following steps are executed during policy registration and policy storage in an [in-memory repository](./src/PolicyServer/Util/Repository/PolicyRepository.cs):
 
 - Embedding creation for "ContentToLookFor" using Azure OpenAI and a deployed embedding model.
 - Embedding creation for each entry in "PotentialPhrases" and "OffTopic".
@@ -67,7 +99,17 @@ The following steps are executed during policy registration and policy storage i
 
 ### Policy rule check
 
-Policy rule compliance can be checked by performing a HTTP get against the [*/policyrulecheck* endpoint](). The Id of the policy and the content which should be checked, needs to be provided.
+Policy rule compliance can be checked by performing a HTTP get against the [*/policyrulecheck*](./src/PolicyServer/Controllers/PolicyController.cs) endpoint. The Id of the policy and the content which should be checked, needs to be provided.
+
+```csharp
+[HttpGet]
+[Route("/policyrulecheck/{policyId}/{content}")]
+public async Task<ActionResult<PolicyRuleCheckResponse<PolicyRuleCheckResult>>> CheckPolicyRule(
+    IOpenAI openAI,
+    IRepository<PolicyRule> policyRepository,
+    string policyId, 
+    string content) { ... }
+```
 
 The policy check performs the following steps:
 
@@ -83,11 +125,11 @@ By analyzing the above results a solid indication if the policy was respected ca
 
 ## Sample
 
-- Start the asp.net server by executing `dotnet build` in the [project folder](). 
+- Start the asp.net server by executing `dotnet build` in the [project folder](./src/PolicyServer/). 
 - Start a browser and point it to ```http://localhost:<your port number>/swagger/index.html```
   ![Step01](../../media/scenarios/01_PolicyCheckEngine/03_DemoStep01.png)
 - Choose the second option (PUT /policyrulecheck)
-- Provide the content from [this JSON file](./request_data/PUT-PolicyCheck.json) as payload and execute the call. This will register 4 policies. (This step is optional as the application loads policies during startup also from [here](./preloaded_policies/))
+- Provide the content from [this JSON file](../../assets/scenarios/01_PolicyCheckEngine/request_data/PUT-PolicyCheck.json) as payload and execute the call. This will register 4 policies. (This step is optional as the application loads policies during startup also from [here](../../assets/scenarios/01_PolicyCheckEngine/preloaded_policies/). 
 - Choose the first option (GET /policyrulecheck/{policyId}/{content}) and provide the following values:
   - policyId: ***Auth-KnowHow-01***
   - content: ***What's your PIN or PINs?***
