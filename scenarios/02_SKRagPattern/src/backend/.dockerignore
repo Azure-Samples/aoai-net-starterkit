@@ -1,0 +1,6 @@
+bin
+obj
+.env*
+*.http
+appSettings.Development.json
+data/db/*

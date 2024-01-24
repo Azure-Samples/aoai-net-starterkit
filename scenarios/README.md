@@ -15,3 +15,4 @@ Below is a detailed breakdown of each folder in this repository. Each section co
 | Scenario Folder  |  Description | Details |
 | --------  |  ----------- | ------- |
 | [01 - AI enabled Policy Check Engine](./01_PolicyCheckEngine/README.md)  |  This project features a Policy Check Engine, enabling the seamless verification of audio, video or text for compliance with custom or public policies. | Embeddings are employed for the policy check, enhancing performance and reducing costs by efficiently representing data. This capability supports both batch processing and real-time analysis for flexible and scalable policy verification. |
+| [02 - Semantic Kernel RAG Pattern](./02_SKRagPattern/README.md)  |  This project features a RAG pattern implementation with Semantic Kernel. | The implementation leverages the SK Store, Memory, Retrieval, and Functions. |

@@ -1,0 +1,6 @@
+wwwroot/*
+bin
+obj
+.env
+*.bak
+*.sqlite
