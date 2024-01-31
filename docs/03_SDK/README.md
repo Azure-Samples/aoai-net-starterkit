@@ -46,6 +46,8 @@ Explore the following notebooks in this repository to learn how to create chat a
 | / | [02-ChatCompletionStreaming](./02_ChatCompletionStreaming.ipynb) | Shows how to implement chat functionality with streaming capabilities using the SDK. |
 | / | [03-JSONMode](./03_JSONMode.ipynb) | Shows how to implement functionality to instruct the LLM to return responses in JSON format |
 | / | [04-GPT Vision](./04_MultiModalVision.ipynb) | Shows how to process text and image data |
+| / | [05-Function Calling](./05_ChatTools.ipynb) | Demonstrates how the LLM can support dynamic function execution by providing information which functions should be called to provide additional data to fulfill a request |
+
 
 These notebooks are replete with detailed explanations at each step, making them a comprehensive guide for developers at all levels.
 
