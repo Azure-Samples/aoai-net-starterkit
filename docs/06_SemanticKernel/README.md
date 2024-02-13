@@ -60,3 +60,22 @@ The Planner is a novel feature of the Semantic Kernel that devises execution str
 #### Planner Documentation
 
 - [AI Orchestration with Planners](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planners/): An in-depth look at the Planner's AI orchestration capabilities.
+
+### RAG
+
+Semantic Kernel makes it easy for developers to implement a RAG (Retrieval Augmented Generation) pattern by providing an abstraction layer to OpenAI models and Vector Databases.
+
+![RAG](../../media/img/06_SemanticKernel/07_RAG.png)
+
+Steps to implement a RAG pattern:
+
+1. Create Semantic Kernel instance
+2. Create Semantic Text Memory and Semantic Memory Service
+3. Ingest Data which is used to ground user queries into Semantic Text Memory
+4. Retrieve grounding information form Semantic Text Memory based on user query
+5. Complete user query (user query & retrieved grounding information) by calling ChatCompletion endpoint
+
+#### RAG Example
+
+- [RAG using Sematic Kernel](./07_RAG_Pattern.ipynb): A simplified in-depth look how to implement a RAG pattern using Semantic Kernel.
+
