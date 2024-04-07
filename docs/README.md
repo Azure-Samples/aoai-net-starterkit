@@ -34,3 +34,4 @@ Below is a detailed breakdown of each folder in this repository. Each section co
 | [06](./06_SemanticKernel/README.md)  | [Planner](./docs/06_SemanticKernel/05_Planner.ipynb)  | Overview of the Semantic Kernel planner which sequences function calls for a task |
 | [06](./06_SemanticKernel/README.md)  | [Logging](./docs/06_SemanticKernel/06_Logs.ipynb)  | How to utilize the default .NET logger with the Semantic Kernel |
 | [06](./06_SemanticKernel/README.md)  | [RAG](./06_SemanticKernel/07_RAG_Pattern.ipynb)  | How to implement a RAG pattern with Semantic Kernel |
+| [07](./07_AssistantsAPI/README.md)  | [Simple Assistants Completion](./07_AssistantsAPI/01_SimpleRun.ipynb)  | How to use the Azure OpenAI Assistants API |

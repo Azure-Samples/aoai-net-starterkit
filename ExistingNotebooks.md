@@ -25,4 +25,4 @@ Below is a detailed breakdown of each folder in this repository explaining a spe
 | [06](./docs/06_SemanticKernel/README.md)  | [Memory](./docs/06_SemanticKernel/04_Memory.ipynb)  | Explanation of the Semantic Kernel Memory concept and usage |
 | [06](./docs/06_SemanticKernel/README.md)  | [Planner](./docs/06_SemanticKernel/05_Planner.ipynb)  | Overview of the Semantic Kernel planner which sequences function calls for a task |
 | [06](./docs/06_SemanticKernel/README.md)  | [Logging](./docs/06_SemanticKernel/06_Logs.ipynb)  | How to utilize the default .NET logger with the Semantic Kernel |
-
+| [07](./docs/07_AssistantsAPI/README.md)  | [Assistants API](./docs/07_AssistantsAPI/01_SimpleRun.ipynb)  | How to utilize the Assistants API. | Simplified sample to introduce the concepts of the Assistants API

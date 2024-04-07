@@ -39,6 +39,7 @@ For example you will learn:
 - How to get started with [Microsoft Semantic Kernel](./docs/06_SemanticKernel/README.md)
   ![SKOverview](./media/img/06_SemanticKernel/01_ConceptOverview.png)
 - How to use GPT-4 Vision [to analyze images](./docs/02_REST_API/04_MultiModalVision.ipynb)
+- How to use the Azure [OpenAI Assistants API](./docs/07_AssistantsAPI/01_SimpleRun.ipynb)
 - and many more concepts...
 
 Check out all [existing notebooks](./ExistingNotebooks.md) and start ramping up on Azure AI services.
