@@ -24,7 +24,7 @@ Before diving into examples, it's essential to understand that the Assistants AP
 
 Thread messages and Assistant configuration (e.g. system prompt) are stored at the API level. This means by using the Assistants API state is stored at the cloud service level:
 
-![State](2024-04-07-10-57-22.png)
+![State](../../media/img/07_AssistantsAPI/02_State.png)
 
 The Assistants API makes those LLM based abstractions available to clients.
 
