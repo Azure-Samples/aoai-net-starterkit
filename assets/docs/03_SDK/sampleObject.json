@@ -1,0 +1,434 @@
+{
+    "address": {
+        "city": null,
+        "country": "MEX",
+        "postalCode": "22120",
+        "state": null,
+        "street": null
+    },
+    "contactDetails": {
+        "phone": null
+    },
+    "currency": "MXN",
+    "customerId": "3759251",
+    "financials": {
+        "12MonthsSales": 378801.03,
+        "add": 256,
+        "cei": null,
+        "creditMemos": 2701.53,
+        "dso": 365,
+        "dueInvoices": 113570.49,
+        "finScore": null,
+        "monthlyFinancials": [
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 18645.6,
+                "month": 1,
+                "openAR": 18645.6,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 13643.58,
+                "month": 2,
+                "openAR": 32289.18,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 25678.04,
+                "month": 3,
+                "openAR": 57967.22,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 4222.11,
+                "month": 4,
+                "openAR": 62189.33,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 16311.24,
+                "month": 5,
+                "openAR": -390529.82,
+                "payments": 469030.39,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 17966.27,
+                "month": 6,
+                "openAR": -372563.55,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 17620.39,
+                "month": 7,
+                "openAR": -354943.16,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 27606.91,
+                "month": 8,
+                "openAR": -327336.25,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 26368.36,
+                "month": 9,
+                "openAR": -300967.89,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 42102.92,
+                "month": 10,
+                "openAR": -258864.97,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 35362.41,
+                "month": 11,
+                "openAR": -223502.56,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 17225.26,
+                "month": 12,
+                "openAR": -206277.3,
+                "payments": 0.0,
+                "year": 2020
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 40219.95,
+                "month": 1,
+                "openAR": -166057.35,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 18627.53,
+                "month": 2,
+                "openAR": -147429.82,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 39006.87,
+                "month": 3,
+                "openAR": -109268.31,
+                "payments": 845.36,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 12264.25,
+                "month": 1,
+                "openAR": 114269.65,
+                "payments": 821.54,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 18137.41,
+                "month": 2,
+                "openAR": 132407.06,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 27155.51,
+                "month": 3,
+                "openAR": 159562.57,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 39660.93,
+                "month": 4,
+                "openAR": 199223.5,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 33279.23,
+                "month": 5,
+                "openAR": 232502.73,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 55713.04,
+                "month": 6,
+                "openAR": 288215.77,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 25679.26,
+                "month": 7,
+                "openAR": 313128.12,
+                "payments": 766.91,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 36687.58,
+                "month": 8,
+                "openAR": 349809.4,
+                "payments": 6.3,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 24697.81,
+                "month": 9,
+                "openAR": 374507.21,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 34601.75,
+                "month": 10,
+                "openAR": 409108.96,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 19485.69,
+                "month": 11,
+                "openAR": 428594.65,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 18492.47,
+                "month": 12,
+                "openAR": 447087.12,
+                "payments": 0.0,
+                "year": 2022
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 24164.23,
+                "month": 1,
+                "openAR": 471251.35,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 20957.6,
+                "month": 2,
+                "openAR": 491947.53,
+                "payments": 261.42,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 55819.63,
+                "month": 3,
+                "openAR": 547767.16,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 29222.74,
+                "month": 4,
+                "openAR": 288028.81,
+                "payments": 288961.09,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 5,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 6,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 7,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 8,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 9,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 10,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 11,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 12,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2023
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 0.0,
+                "month": 1,
+                "openAR": 288028.81,
+                "payments": 0.0,
+                "year": 2024
+            }
+        ],
+        "overDueInvoices": 470762.09,
+        "totalSales": 1048721.82
+    },
+    "firstInvoiceDate": "2020-01-06T00:00:00",
+    "foreignId": "XXX140613XX2",
+    "name": "DEMO COMPANY",
+    "sectorNaicsDescription": null,
+    "sectorNaicsId": null,
+    "taxId": "XXX140613XX2",
+    "verifiedName": null
+}

@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "address": {
+        "type": "object",
+        "properties": {
+          "city": { "type": ["string", "null"] },
+          "country": { "type": "string" },
+          "postalCode": { "type": "string" },
+          "state": { "type": ["string", "null"] },
+          "street": { "type": ["string", "null"] }
+        },
+        "required": ["country", "postalCode"]
+      },
+      "contactDetails": {
+        "type": "object",
+        "properties": {
+          "phone": { "type": ["string", "null"] }
+        }
+      },
+      "currency": { "type": "string" },
+      "customerId": { "type": "string" },
+      "financials": {
+        "type": "object",
+        "properties": {
+          "12MonthsSales": { "type": "number" },
+          "add": { "type": "number" },
+          "cei": { "type": ["number", "null"] },
+          "creditMemos": { "type": "number" },
+          "dso": { "type": "number" },
+          "dueInvoices": { "type": "number" },
+          "finScore": { "type": ["number", "null"] },
+          "monthlyFinancials": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "add": { "type": ["number", "null"] },
+                "cei": { "type": ["number", "null"] },
+                "dso": { "type": ["number", "null"] },
+                "invoices": { "type": "number" },
+                "month": { "type": "number" },
+                "openAR": { "type": "number" },
+                "payments": { "type": "number" },
+                "year": { "type": "number" }
+              },
+              "required": ["invoices", "month", "openAR", "year"]
+            }
+          },
+          "overDueInvoices": { "type": "number" },
+          "totalSales": { "type": "number" }
+        },
+        "required": ["12MonthsSales", "creditMemos", "dso", "dueInvoices", "monthlyFinancials", "overDueInvoices", "totalSales"]
+      },
+      "firstInvoiceDate": { "type": "string", "format": "date-time" },
+      "foreignId": { "type": "string" },
+      "name": { "type": "string" },
+      "sectorNaicsDescription": { "type": ["string", "null"] },
+      "sectorNaicsId": { "type": ["string", "null"] },
+      "taxId": { "type": "string" },
+      "verifiedName": { "type": ["string", "null"] }
+    },
+    "required": ["address", "currency", "customerId", "financials", "firstInvoiceDate", "foreignId", "name", "taxId"]
+  }
+  
