@@ -1,0 +1,14 @@
+Scenario,Prompt Text,Label
+1,"Can you provide the contact number for support?", Yes
+1,"I need the email address for assistance, can you help?", Yes
+1,"Where can I find contact details for help?", Yes
+1,"Could you give me the phone number for emergency services?", Yes
+1,"Is there a direct line I can call for immediate help?", Yes
+1,"How do I contact your office for more information?", Yes
+1,"Please provide the contact information for customer support.", Yes
+1,"I'm looking to speak to someone; do you have a contact list?", Yes
+1,"Can you direct me to someone I can talk to about my issues?", Yes
+1,"Who should I contact if I need urgent assistance?", Yes
+1,"I think I left my phone at the office", No
+1,"I need to get a new phone", No
+1,"I was thinking on getting new coat, do you have any?", No
