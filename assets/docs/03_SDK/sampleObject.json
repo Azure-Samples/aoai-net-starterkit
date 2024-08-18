@@ -1,13 +1,13 @@
 {
     "address": {
-        "city": null,
+        "city": "boston",
         "country": "MEX",
         "postalCode": "22120",
         "state": null,
-        "street": null
+        "street": "harvard 123"
     },
     "contactDetails": {
-        "phone": null
+        "phone": "123-456-7890"
     },
     "currency": "MXN",
     "customerId": "3759251",
@@ -168,6 +168,96 @@
                 "month": 3,
                 "openAR": -109268.31,
                 "payments": 845.36,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 24313.79,
+                "month": 4,
+                "openAR": -84954.52,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 29120.05,
+                "month": 5,
+                "openAR": -55834.47,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 21769.73,
+                "month": 6,
+                "openAR": -34064.74,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 25222.36,
+                "month": 7,
+                "openAR": -8842.38,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 18040.4,
+                "month": 8,
+                "openAR": 9198.02,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 21790.66,
+                "month": 9,
+                "openAR": 30988.68,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 23711.27,
+                "month": 10,
+                "openAR": 54699.95,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 33641.38,
+                "month": 11,
+                "openAR": 88341.33,
+                "payments": 0.0,
+                "year": 2021
+            },
+            {
+                "add": null,
+                "cei": null,
+                "dso": null,
+                "invoices": 14485.61,
+                "month": 12,
+                "openAR": 102826.94,
+                "payments": 0.0,
                 "year": 2021
             },
             {
