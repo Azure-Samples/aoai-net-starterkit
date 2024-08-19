@@ -47,6 +47,9 @@ Explore the following notebooks in this repository to learn how to create chat a
 | / | [03-JSONMode](./03_JSONMode.ipynb) | Shows how to implement functionality to instruct the LLM to return responses in JSON format |
 | / | [04-GPT Vision](./04_MultiModalVision.ipynb) | Shows how to process text and image data |
 | / | [05-Function Calling](./05_ChatTools.ipynb) | Demonstrates how the LLM can support dynamic function execution by providing information which functions should be called to provide additional data to fulfill a request |
+| / | [06-Prompt Testing](./06_PromptTesting.ipynb) | Demonstrates how prompts can be tested and classified |
+| / | [07-Chat with Json](./07_ChatWithJson.ipynb) | Demonstrates how to extract dynamic content from JSON data |
+| / | [08-Chat with Data](./08_ChatWithData.ipynb) | Demonstrates how to translate user queries into SQL statements |
 
 
 These notebooks are replete with detailed explanations at each step, making them a comprehensive guide for developers at all levels.
